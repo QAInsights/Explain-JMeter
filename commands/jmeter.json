@@ -1,0 +1,7 @@
+{
+	"version": "5.4",
+	"commands": {
+		"h": "help",
+		"v": "version"
+	}
+}
