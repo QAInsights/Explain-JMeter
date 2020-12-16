@@ -16,11 +16,17 @@ def home():
 @app.route('/explain', methods=['POST'])
 def explain():
     data = request.form
-    # print(data)
+    print(data)
     commands = data["usercommand"]
-    # print(commands)
-    explain_commands(commands)
-    return render_template('explain.html')
+    result = {}
+    for command in commands:
+        if not command.isspace():
+            print(f"from the form {command}")
+            k, v = explain_commands(command)
+            print(f"In main {k} {v}")
+            result[k] = v
+    print(result)
+    return render_template('explain.html', string=result)
 
 
 # Press the green button in the gutter to run the script.

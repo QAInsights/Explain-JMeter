@@ -1,16 +1,15 @@
 import json
 
 
-def explain_commands(commands):
-    print(commands)
-    each_arg = commands.split(" ")
-    for arg in each_arg:
-        print(f"User input is {arg}")
-        with open("commands/jmeter.json") as f:
-            data = json.load(f)
-            for k, v in data['commands'].items():
-                print(k, v, arg)
-                if str(k) is str(arg):
-                    print(f"match {k}")
-
-    return
+def explain_commands(command):
+    print(f"inside explain module {command}")
+    with open("commands/jmeter.json") as f:
+        data = json.load(f)
+        print(f"User input is {command}")
+        for items in data['commands']:
+            # print(items)
+            for key, value in items.items():
+                # print(key, value)
+                if command == key:
+                    # print(key, value)
+                    return key, value
