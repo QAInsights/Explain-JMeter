@@ -1,7 +1,7 @@
 {
 	"commands": [{
 		"?": "print command line options and exit",
-		"-h": "--help print usage information and exit",
+		"h": "--help print usage information and exit",
 		"v": "--version print the version information and exit",
 		"p": "--propfile <argument> the jmeter property file to use",
 		"q": "--addprop <argument> additional JMeter property file(s)",
