@@ -2,19 +2,22 @@
 {% block body %}
 <br>
 <div class="container">
-    <table class="table table-hover table-responsive">
+    <table class="table table-hover">
     <!-- For loop logic  -->
     <thead>
     <tr>
-      <th scope="col" align="center">Command</th>
-      <th scope="col" align="center">Usage</th>
+      <th style="text-align: center;">Command</th>
+      <th style="text-align: center;">Usage</th>
     </tr>
     </thead>
     <tbody>
-    <tr><td align="center">jmeter</td><td align="center">root command</td></tr>
+    <tr>
+        <td align="center">jmeter</td>
+        <td align="center">root command</td>
+    </tr>
     {% for k, v in string.items() %}
         <tr>
-            <td align="center">-{{k}}</td>
+            <td align="center">{{k}}</td>
             <td align="center">{{v}}</td>
         </tr>
     {%endfor%}

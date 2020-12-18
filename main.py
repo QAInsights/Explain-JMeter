@@ -5,7 +5,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from explain import explain_commands
 
-
 app = Flask(__name__, template_folder='templates')
 
 
@@ -35,6 +34,6 @@ def explain():
 # Press the green button in the gutter to run the script.
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=7000, debug=True)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
