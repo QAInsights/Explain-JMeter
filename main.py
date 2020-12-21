@@ -5,17 +5,17 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from explain import explain_commands
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 
 @app.route('/', methods=['GET'])
 def home():
-    return render_template('home.html')
+    return render_template('home.html', isHome=True)
 
 
-@app.route('/', methods=['POST'])
+@app.route('/explain', methods=['GET'])
 def explain():
-    commands = request.form['usercommand']
+    commands = request.args['usercommand'].strip()
     commands = commands.split(' ')
     print(f"User input is {commands}")
     result = {}

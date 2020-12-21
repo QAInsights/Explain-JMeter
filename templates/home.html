@@ -1,10 +1,7 @@
 {% extends 'layout.html' %}
-
 {% block body %}
-
-
 <br>
-<form method="POST" action="/" >
+<form method="GET" action="/explain" >
     <div class="form-group">
     <!-- <label for="formGroupExampleInput"></label>
     <input type="text" class="form-control" name="usercommand" id="formGroupExampleInput" placeholder="jmeter -n">
@@ -18,4 +15,15 @@
         </div>
     </div>
 </form>
+{% if isHome %}
+<br/><br/>
+<h4>Top Commands</h4>
+<div class="list-group">
+  <a href="{{ url_for('explain') }}?usercommand=-n+-t" class="list-group-item list-group-item-action">jmeter -n -t</a>
+  <a href="{{ url_for('explain') }}?usercommand=-v" class="list-group-item list-group-item-action">jmeter -v</a>
+  <a href="{{ url_for('explain') }}?usercommand=-H" class="list-group-item list-group-item-action">jmeter -H</a>
+  <a href="{{ url_for('explain') }}?usercommand=-P" class="list-group-item list-group-item-action">jmeter -P</a>
+</div>
+{% endif %}
 {% endblock %}
+
