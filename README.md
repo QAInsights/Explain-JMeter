@@ -9,7 +9,7 @@ Designed for **DO Hackathon** at **Dev.to**.
 
 🙏
 
-Here it how it got [started](https://dev.to/qainsights/inception-pjp).
+Here is how it got [started](https://dev.to/qainsights/inception-pjp).
 
 # Why this tool?
 Why not? :)
