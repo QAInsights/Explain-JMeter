@@ -1,3 +1,5 @@
+![Explain JMeter!](./images/Explain%20JMeter.png)
+
 # Explain JMeter
 Explain JMeter is a simple utility to explain JMeter commands.
 
