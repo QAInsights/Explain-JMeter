@@ -3,4 +3,4 @@ spec:
     - name: explain-jmeter
       git:
         branch: main
-        repo_clone_url: https://github.com/QAInsights/Explain-JMeter
+        repo_clone_url: https://github.com/QAInsights/Explain-JMeter.git
