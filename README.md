@@ -14,4 +14,4 @@ Here is how it got [started](https://dev.to/qainsights/inception-pjp).
 # Why this tool?
 Why not? :)
 
-[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/QAInsights/Explain-JMeter/tree/master&refcode=612aff60e215)
+[![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue-ghost.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/QAInsights/Explain-JMeter/tree/master&refcode=612aff60e215)
