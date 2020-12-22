@@ -5,4 +5,4 @@ spec:
    git:
      branch: master
      repo_clone_url: https://github.com/QAInsights/Explain-JMeter.git
-   build_command: "python waitress_server.py"
+   run_command: "python waitress_server.py"
