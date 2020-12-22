@@ -1,0 +1,6 @@
+spec:
+  services:
+    - name: explain-jmeter
+      git:
+        branch: main
+        repo_clone_url: https://github.com/QAInsights/Explain-JMeter
