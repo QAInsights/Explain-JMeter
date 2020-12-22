@@ -2,6 +2,10 @@ import json
 
 
 def explain_commands(command):
+    """
+    :param command: each command from the input text box
+    :return: valid explanation for each command
+    """
     print(f"inside explain module user command is {command}")
     with open("commands/jmeter.json") as f:
         data = json.load(f)

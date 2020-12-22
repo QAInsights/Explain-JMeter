@@ -1,7 +1,6 @@
-# This is a sample Python script.
+# Main Context
+# Author: NaveenKumar Namachivayam at QAInsights.com
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from explain import explain_commands
 
@@ -31,9 +30,5 @@ def explain():
     return render_template('explain.html', string=result)
 
 
-# Press the green button in the gutter to run the script.
-
 if __name__ == '__main__':
     app.run(port=7000, debug=True)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
