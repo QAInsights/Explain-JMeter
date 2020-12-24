@@ -3,10 +3,6 @@
 <br>
 <form method="GET" action="/explain" >
     <div class="form-group">
-    <!-- <label for="formGroupExampleInput"></label>
-    <input type="text" class="form-control" name="usercommand" id="formGroupExampleInput" placeholder="jmeter -n">
-        <input type="submit" value="Submit"/>
-    -->
         <div class="input-group mb-3">
           <input type="text" name="usercommand" class="form-control" placeholder="e.g. -n or -t or -v. No need to enter 'jmeter'." aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
@@ -23,6 +19,7 @@
   <a href="{{ url_for('explain') }}?usercommand=-v" class="list-group-item list-group-item-action">jmeter -v</a>
   <a href="{{ url_for('explain') }}?usercommand=-H" class="list-group-item list-group-item-action">jmeter -H</a>
   <a href="{{ url_for('explain') }}?usercommand=-P" class="list-group-item list-group-item-action">jmeter -P</a>
+  <a href="{{ url_for('explain') }}?usercommand=-q" class="list-group-item list-group-item-action">jmeter -q</a>
 </div>
 {% endif %}
 {% endblock %}
